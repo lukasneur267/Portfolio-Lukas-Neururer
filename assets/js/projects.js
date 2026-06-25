@@ -13,8 +13,8 @@ myProjects = [
     ],
     imageDescriptions: ["Home", "Destinations", "Details", "Bookings"],
     techStack: "Angular, Bootstrap, HTML, CSS",
-    repositoryLink:
-      "https://github.com/lukasneur267/FE2605-EXAM-3-LukasNeururer",
+    websiteLink: "wanderlust/index.html",
+    repositoryLink: "https://github.com/lukasneur267/Wanderlust-Travel-Manager",
   },
   {
     name: "Book Tracker",
@@ -24,8 +24,8 @@ myProjects = [
     images: ["book-tracker-1.png", "book-tracker-2.png"],
     imageDescriptions: ["Home", "Sorting Functionality"],
     techStack: "Bootstrap, HTML, CSS, JavaScript",
-    repositoryLink:
-      "https://github.com/lukasneur267/FE2605-EXAM-2-LukasNeururer",
+    websiteLink: "book-tracker/index.html",
+    repositoryLink: "https://github.com/lukasneur267/Book-Tracker",
   },
   {
     name: "Atelier Gallery",
@@ -35,19 +35,19 @@ myProjects = [
     images: ["atelier-1.png", "atelier-2.png"],
     imageDescriptions: ["Home", "Featured Exhibition"],
     techStack: "HTML, CSS, JavaScript",
-    repositoryLink:
-      "https://github.com/lukasneur267/FE2605-EXAM-1-LukasNeururer",
+    websiteLink: "atelier-gallery/index.html",
+    repositoryLink: "https://github.com/lukasneur267/Atelier-Gallery",
   },
-  {
-    name: "VR Hand Rehabilitation Game",
-    subHeading: "Virtual piano game for gamified hand rehabilitation",
-    description:
-      "Virtual-reality piano game where notes spawn randomly on the screen and users have to move the right finger of both hands at the right time to increase a score.",
-    images: ["vr-1.png", "vr-2.png"],
-    imageDescriptions: ["Piano Game", "User Interface"],
-    techStack: "Unity, C#",
-    repositoryLink: "https://github.com/lukasneur267/VirtuKeys-main",
-  },
+  // {
+  //   name: "VR Hand Rehabilitation Game",
+  //   subHeading: "Virtual piano game for gamified hand rehabilitation",
+  //   description:
+  //     "Virtual-reality piano game where notes spawn randomly on the screen and users have to move the right finger of both hands at the right time to increase a score.",
+  //   images: ["vr-1.png", "vr-2.png"],
+  //   imageDescriptions: ["Piano Game", "User Interface"],
+  //   techStack: "Unity, C#",
+  //   repositoryLink: "https://github.com/lukasneur267/VirtuKeys-main",
+  // },
 ];
 
 // Container to hold the project cards
@@ -90,7 +90,9 @@ myProjects.forEach((project, index) => {
           <p>
             <strong>Technology Stack:</strong> ${project.techStack}
           </p>
-
+          <div class="white-button my-2">
+            <a href="/projects/${project.websiteLink}">Visit</a>
+          </div>
           <div class="d-flex justify-content-center g-2 align-items-center">
             <span>image gallery</span>
             <a
